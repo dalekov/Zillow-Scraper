@@ -59,33 +59,6 @@ python zillow_scraper.py
 - Chrome will remain open after execution (detach option enabled)
 - Form submission is set to work with a Bulgarian submit button ("Изпращане")
 
-## 🐛 Known Limitations
-
-- No error handling for network issues
-- Static sleep times may need adjustment based on connection speed
-- Limited to specific HTML structure of the Zillow clone site
-- Requires manual closing of Chrome browser after completion
-
-## 🔄 Process Flow
-
-1. Sends GET request to Zillow clone site
-2. Parses HTML with BeautifulSoup
-3. Extracts property information
-4. Initializes Chrome WebDriver
-5. Iterates through properties:
-   - Opens form
-   - Fills in data
-   - Submits
-   - Waits for next iteration
-
-## 👨‍💻 Code Structure
-
-```python
-# Main components:
-- BeautifulSoup for HTML parsing
-- Selenium WebDriver for form automation
-- Requests for web scraping
-```
 
 ## 🤝 Contributing
 
